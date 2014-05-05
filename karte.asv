@@ -9,8 +9,6 @@ axis off
 x=num2str(x);
 y=num2str(y);
 
-w={'http://api.met.no/weatherapi/locationforecast/1.8/?lat=',y,';lon=',x}
-w=strjoin(w)
-w(isspace(w))=[]
+w
 
 %('http://api.met.no/weatherapi/locationforecast/1.8/?lat=53.143889;lon=8.213889','weather.xml');

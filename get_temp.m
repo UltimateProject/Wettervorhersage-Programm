@@ -1,4 +1,4 @@
-function [ ordner_temperatur, temperatur_tage] = get_temp(daten)
+function [ Tag_aktuell, Tage_rest] = get_temp(daten)
 %UNTITLED2 Summary of this function goes here
 %   Detailed explanation goes here
 
@@ -81,17 +81,32 @@ for gg = 1 : 2 : 20
         end
         
 end
-  
-temperaturen=cell(1);
-temperaturen=temperatur_tage{:,1:2};
+
+T=clock;
+
+temperaturen_aktuell=temperatur_tage(:,2);
+
+Tag_aktuell(1,1)=[temperaturen_aktuell{T(1,4)+1,1}];
+Tag_aktuell(2,1)=min([temperaturen_aktuell{:}]);
+Tag_aktuell(3,1)=max([temperaturen_aktuell{:}]);
 
 
-% for mm = 1 : 2 : 18
-% 
-% %         temperaturen{1,mm+2}=temperatur_tage{1,mm+2};
-%         temperaturen(1,mm+3)= min(cell2mat(temperatur_tage(:,mm+3)));
-% %         temperaturen{2,mm+3}=max(temperatur_tage{:,mm+3});
-% 
-% 
-% end
+temperaturen_tag2 = temperatur_tage(:,4);
+Tage_rest(1,1)=min([temperaturen_tag2{:}]);
+Tage_rest(2,1)=max([temperaturen_tag2{:}]);
+
+temperaturen_tag3 = temperatur_tage(:,6);
+Tage_rest(1,2)=min([temperaturen_tag3{:}]);
+Tage_rest(2,2)=max([temperaturen_tag3{:}]);
+
+temperaturen_tag4 = temperatur_tage(:,8);
+Tage_rest(1,3)=min([temperaturen_tag4{:}]);
+Tage_rest(2,3)=max([temperaturen_tag4{:}]);
+
+temperaturen_tag5 = temperatur_tage(:,10);
+Tage_rest(1,4)=min([temperaturen_tag5{:}]);
+Tage_rest(2,4)=max([temperaturen_tag5{:}]);
+
+
+
 

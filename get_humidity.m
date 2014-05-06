@@ -1,11 +1,6 @@
-function [ feuchtigkeit_Tag_aktuell, feuchtigkeit_Tage_rest ] = get_humidity( daten )
+function [ feuchtigkeit_Tag_aktuell, feuchtigkeit_Tage_rest ] = get_humidity( daten,datum_system )
 %UNTITLED2 Summary of this function goes here
 %   Detailed explanation goes here
-
-
-datum_system=cell(1);
-datum_system{1,1}=date;
-datum_system(1,1) = cellfun(@(x) x(1:2), datum_system(1,1), 'UniformOutput', false);
 
 datum_vergleich=cell(1);
 

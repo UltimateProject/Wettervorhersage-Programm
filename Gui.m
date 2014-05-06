@@ -1,7 +1,6 @@
-clear all
+close all
+%clear all
 clc 
-
-% hintergrund = importdata('Wetter.jpg');
 
 
 h=figure('Units','normalized','Position',[0.3 0.2 0.4 0.6],......
@@ -20,7 +19,7 @@ uistack(ah, 'bottom');
 
 h1=uicontrol('parent', h, 'Units', 'normalized', 'Position', [0.2 0.7 0.6 0.2],.....
    'BackgroundColor', [1 1 1], 'Style', 'pushbutton', 'FontUnits', 'normalized',....
-   'Fontsize', 0.65, 'string', 'Wetter','Callback', 'DE_Karte');
+   'Fontsize', 0.65, 'string', 'Wetter','Callback', 'karte');
 
 h2=uicontrol('parent', h, 'Units', 'normalized', 'Position', [0.2 0.4 0.6 0.2],.....
    'BackgroundColor', [1 1 1], 'Style', 'pushbutton', 'FontUnits', 'normalized',....

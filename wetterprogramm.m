@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-% clear all
-=======
-<<<<<<< HEAD
-clear all
-
-urlwrite('http://api.met.no/weatherapi/locationforecast/1.8/?lat=53.143889;lon=8.213889', 'weather.xml');
-
-xml = xmlread ('weather.xml');
-
-daten = parse_xml(xml);
-=======
-
->>>>>>> 05b7143f54dea4503711c148b4430c884d0f4df7
 
 h_wetter=figure('Units','normalized','Position',[0.1 0.1 0.8 0.8],......
         'name','Wetterdaten Oldenburg', 'numbertitle','off');
@@ -27,4 +13,4 @@ daten = get_data();
 [wolken_dichte_Tage_rest, wolken_dichte_aktuell] = get_cloudiness(daten);
 % [feuchtigkeit_Tag_aktuell, feuchtigkeit_Tage_rest] = get_humidity(daten);
 
->>>>>>> 9bf397b03446fe0c3e625fe6c508bce649f20a03
+

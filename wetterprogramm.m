@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0cb3a9deafdafc1dd2fe6435b42402e2c2a47bbb
 
 h_wetter=figure('Units','normalized','Position',[0.1 0.1 0.8 0.8],......
         'name','Wetterdaten Oldenburg', 'numbertitle','off');
@@ -8,9 +12,12 @@ h1=uicontrol('parent', h_wetter, 'Units', 'normalized', 'Position', [0.4 0.9 0.2
 
 daten = get_data();
 [Tag_aktuell, Tage_rest] = get_temp(daten);
-% ordner_windrichtung = get_windDirection(daten);
+ordner_windrichtung = get_windDirection(daten);
 [geschw_Tag_aktuell, geschw_Tage_rest, staerke_aktuell, staerke_Tage_rest] = get_windSpeed(daten);
 [wolken_dichte_Tage_rest, wolken_dichte_aktuell] = get_cloudiness(daten);
 % [feuchtigkeit_Tag_aktuell, feuchtigkeit_Tage_rest] = get_humidity(daten);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0cb3a9deafdafc1dd2fe6435b42402e2c2a47bbb

@@ -1,4 +1,4 @@
-function [ ] = func1(h )
+function [ ] = func1(h)
 % Diese Funktion dient dazu zwischen 2 Skripten zu schalten. 
 
 close(h)   %  Schließt das Hauptmenüfenster.

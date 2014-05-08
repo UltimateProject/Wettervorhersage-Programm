@@ -6,7 +6,7 @@ q = grad_richtung * pi/180; % Rechnet die Gradzahl in rad um.
 
 [w,e]=pol2cart(q,1); % Wandelt die polaren Koordinaten in kartesische um.
 
-G=compass(w,e); % Erstellt einen Kompass mit der entsprechenden Windrichtung
+G=compass(w,e); % Erstellt einen Kompass mit der entsprechenden Windrichtung.
 
 % Ändert die Gradzahlen um den Kompass in die Abkürzungen der Himmelsrichtungen. 
 set(findall(gcf, 'String', '0'),'String', 'E');     % Ändert 0 Grad in E
@@ -27,3 +27,5 @@ set(G,'Color','r', 'LineWidth', 3)  % Ändert Pfeilfarbe in rot und erhöht
                                    
 end % Ende der Funktion
 
+%--------------------Licence ---------------------------------------------
+% Copyright (c) <2014> Marc Hieronimus, Joseffa Baumann

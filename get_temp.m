@@ -1,4 +1,4 @@
-function [ Tag_aktuell, Tage_rest] = get_temp(daten,datum_system)
+function [ Tag_aktuell, Tage_rest, datum] = get_temp(daten,datum_system)
 % Diese Funktion filtert die Temperaturen des aktuellen Tages und die der 
 % darauffolgenden 4 Tage aus den heruntergeladenen Informationen.  
 

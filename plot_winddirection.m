@@ -23,7 +23,6 @@ set(findall(gcf, 'String', '300'),'String', 'SSE'); % Ändert 300 Grad in SSE
 set(findall(gcf, 'String', '330'),'String', 'ESE'); % Ändert 330 Grad in ESE
 set(G,'Color','r', 'LineWidth', 3)  % Ändert Pfeilfarbe in rot und erhöht
                                     % die Strichdicke auf 3.
-
                                    
 end % Ende der Funktion
 

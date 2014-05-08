@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-function [ temptoday ] = temptoday_out( Tag_aktuell )
-%   Author: M. Hieronimus, J. Baumann 08
-=======
+
 function [ ] = temptoday_out(Tag_aktuell)
 %   Author: M. Hieronimus, J. Baumann 08.05.2014
->>>>>>> f865800ab45e4c05c36f39b5c80638b3f8015e56
 %   Funktion zum Einlesen der Werte für die Temperatur und zum Auswählen
 %   der entsprechenden Darstellungen, Übergabe an das Hauptprogramm der
 %   Anzeige
@@ -18,26 +14,11 @@ thermometer5 = importdata('thermometer20_25.png');
 thermometer6 = importdata('thermometer25_30.png'); 
 thermometer7 = importdata('thermometer0_5.png');
 
-<<<<<<< HEAD
-% Bilder einfügen: 
-% axis off
-% axes ('Position', [1 1 1 1])
-% if t==2
-% image (bla)
-% end
-% if t==5
-% image(bla2)
-% end 
-% axis image
-% axis off
-
-=======
->>>>>>> f865800ab45e4c05c36f39b5c80638b3f8015e56
 % BEGINN AKTUELLER TAG
 % Auslesen der aktuellen Temperaturwerte des aktuellen Tages
 % Bestimmen der Position der Bilder
 axis off
-<<<<<<< HEAD
+
 axes ('Position', [0.2 0.8 0.2 0.2])
 if Tag_aktuell(1,1) <= 5 
     image ('thermometer0_5.png')
@@ -173,7 +154,7 @@ t_mittel=(Tag_aktuell(2,1) + Tag_aktuell(3,1))/2 ;
 % Beginn if-Abfrage mit der Bedingung der Eingrenzung der Temperatur,
 % Zuweisung der jeweiligen Thermometerbilder. In 5 °C - Schritten
 if t_mittel <= 5 
-    image (thermometer2)
+    imagesc(thermometer2)
 end
 
 if 5 <= t_mittel && t_mittel<= 10
@@ -232,6 +213,5 @@ set(tempmax,'ForeGroundColor', 'r')
 
 
 
->>>>>>> f865800ab45e4c05c36f39b5c80638b3f8015e56
 end
 

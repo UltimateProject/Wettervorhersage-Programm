@@ -84,11 +84,11 @@ progressbar(0.9)
 % Erweitert den Ladebalken auf 100 Prozent und schließt sie anschließend.
 progressbar(1) 
 
-% Schließt die Karte.
-close(h_karte);
-
-% Öffnet das Hauptmenü.
-Wetterprogramm_main
+% % Schließt die Karte.
+% close(h_karte);
+% 
+% % Öffnet das Hauptmenü.
+% Wetterprogramm_main
 
 
 %--------------------Licence ---------------------------------------------

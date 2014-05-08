@@ -20,6 +20,7 @@ set(datum3,'units','normalized','position', [0.45 0.92 0.1 0.05],'FontSize',21, 
 set(datum4,'units','normalized','position', [0.65 0.92 0.1 0.05],'FontSize',21, 'string','Tag4');
 set(datum5,'units','normalized','position', [0.85 0.92 0.1 0.05],'FontSize',21, 'string','Tag5');
 
+<<<<<<< HEAD
 % Einlesen der Werte für 'Morgens'
 morgens1=uicontrol('style','text');
 morgens2=uicontrol('style','text');
@@ -61,9 +62,17 @@ set(abends3,'units','normalized','position', [0.45 0.25 0.1 0.05],'FontSize',16,
 set(abends4,'units','normalized','position', [0.65 0.25 0.1 0.05],'FontSize',16, 'string','Wind');
 set(abends5,'units','normalized','position', [0.85 0.25 0.1 0.05],'FontSize',16, 'string','Wind');
 
+=======
+>>>>>>> f865800ab45e4c05c36f39b5c80638b3f8015e56
 
 % Ausblenden der Axen
 axis off
 
+<<<<<<< HEAD
 
 
+=======
+% Ausführen der Funktion für die Wochenübersicht der Temperaturen
+tempweek_out( Tag_aktuell, Tage_rest )
+cloudweek(wolken_dichte_aktuell, wolken_dichte_Tage_rest)
+>>>>>>> f865800ab45e4c05c36f39b5c80638b3f8015e56

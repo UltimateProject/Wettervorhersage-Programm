@@ -1,5 +1,5 @@
 close all  % Schließt alle noch geöffneten Skripte und Funktionen.
-%clear all  % Leert den Workspace.
+clear all  % Leert den Workspace.
 clc        % Leert die Commandline.
 
 % Erstellt eine Figure die als Fenster für das Hauptmenü dient. ES werden
@@ -20,22 +20,15 @@ uistack(ah, 'bottom');
 
 % Erstellt den ersten Button mit diversen Eigenschaften wie z.B. Größe,
 % Position, Callback, Beschriftung, etc. 
-h1=uicontrol('parent', h, 'Units', 'normalized', 'Position', [0.2 0.7 0.6 0.2],.....
+h1=uicontrol('parent', h, 'Units', 'normalized', 'Position', [0.2 0.55 0.6 0.2],.....
    'BackgroundColor', [1 1 1], 'Style', 'pushbutton', 'FontUnits', 'normalized',....
-   'Fontsize', 0.65, 'string', 'Wetter','Callback', 'func1(h)');
-
-% Erstellt den zweiten Button mit diversen Eigenschaften wie z.B. Größe,
-% Position, Callback, Beschriftung, etc. 
-h2=uicontrol('parent', h, 'Units', 'normalized', 'Position', [0.2 0.4 0.6 0.2],.....
-   'BackgroundColor', [1 1 1], 'Style', 'pushbutton', 'FontUnits', 'normalized',....
-   'Fontsize', 0.65, 'string', 'Anleitung');
+   'Fontsize', 0.65, 'string', 'Wetter','Callback', 'Karte_Verarbeitungen');
 
 % Erstellt den dritten Button mit diversen Eigenschaften wie z.B. Größe,
 % Position, Callback, Beschriftung, etc. 
-h3=uicontrol('parent', h, 'Units', 'normalized', 'Position', [0.2 0.1 0.6 0.2],.....
+h3=uicontrol('parent', h, 'Units', 'normalized', 'Position', [0.2 0.25 0.6 0.2],.....
    'BackgroundColor', [1 1 1], 'Style', 'pushbutton', 'FontUnits', 'normalized',....
    'Fontsize', 0.65, 'string', 'Beenden', 'Callback','close(h)');
-
 
 
 %--------------------Licence ---------------------------------------------

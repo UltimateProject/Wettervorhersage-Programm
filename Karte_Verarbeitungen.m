@@ -3,15 +3,17 @@
 % festgelegt.
 h_karte=figure('Units','normalized','Position',[0.1 0.1 0.7 0.7],......
                'name','Wetterdaten Oldenburg', 'numbertitle','off');
-
+           
 % Erstellt Größe über das gesamte Fenster.
 ah = axes('unit', 'normalized', 'position', [0 0 1 1]);
+
+global Tag_aktuell Tage_rest datum geschw_Tag_aktuell geschw_Tage_rest staerke_aktuell staerke_Tage_rest richtungen_Tage_rest wolken_dichte_Tage_rest wolken_dichte_aktuell
 
 % Legt den Ausschnitt der importierten Karte fest.
 axis([7 10 52 54])
 
 % Ruft die Funktion auf, die die Karte zur Auswahl des Ortes erstellt auf
-% deutsch auf.
+% deutsch 
 plot_google_map('language','de')
 
 axis off  % Entfernt die sichtbaren Achsenbeschriftungen. 
@@ -81,14 +83,14 @@ progressbar(0.9)
 
 % plot_winddirection( richtung_Tag_aktuell(1,1) )
 
+% Skript für die Visualisierung, beinhaltet mehrere kleine Funktionen
+visiual
+
 % Erweitert den Ladebalken auf 100 Prozent und schließt sie anschließend.
 progressbar(1) 
 
-% Schließt die Karte.
-close(h_karte);
-
 % Öffnet das Hauptmenü.
-Wetterprogramm_main
+% Wetterprogramm_main
 
 
 %--------------------Licence ---------------------------------------------

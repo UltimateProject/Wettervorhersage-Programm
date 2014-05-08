@@ -168,22 +168,22 @@ staerke_aktuell(2,1)=min([windstaerke_aktuell{:}]); % Ermitteln der niedrigsten 
 staerke_aktuell(3,1)=max([windstaerke_aktuell{:}]); % Ermitteln der maximalen Windstärke.
 
 % Übertragen der einzelnen Windstärken des zweiten Tages.
-windstaerke_tag2 = geschwindigkeiten_tage(:,6);
+windstaerke_tag2 = geschwindigkeiten_tage(:,7);
 staerke_Tage_rest(1,1)=min([windstaerke_tag2{:}]); % Ermitteln der niedrigsten Windstärke.
 staerke_Tage_rest(2,1)=max([windstaerke_tag2{:}]); % Ermitteln der maximalen Windstärke.
 
 % Übertragen der einzelnen Windstärken des dritten Tages.
-windstaerke_tag3 = geschwindigkeiten_tage(:,9);
+windstaerke_tag3 = geschwindigkeiten_tage(:,11);
 staerke_Tage_rest(1,2)=min([windstaerke_tag3{:}]); % Ermitteln der niedrigsten Windstärke.
 staerke_Tage_rest(2,2)=max([windstaerke_tag3{:}]); % Ermitteln der maximalen Windstärke.
 
 % Übertragen der einzelnen Windstärken des vierten Tages.
-windstaerke_tag4 = geschwindigkeiten_tage(:,12);
+windstaerke_tag4 = geschwindigkeiten_tage(:,15);
 staerke_Tage_rest(1,3)=min([windstaerke_tag4{:}]); % Ermitteln der niedrigsten Windstärke.
 staerke_Tage_rest(2,3)=max([windstaerke_tag4{:}]); % Ermitteln der maximalen Windstärke.
 
 % Übertragen der einzelnen Windstärken des fünften Tages.
-windstaerke_tag5 = geschwindigkeiten_tage(:,15);
+windstaerke_tag5 = geschwindigkeiten_tage(:,19);
 staerke_Tage_rest(1,4)=min([windstaerke_tag5{:}]); % Ermitteln der niedrigsten Windstärke.
 staerke_Tage_rest(2,4)=max([windstaerke_tag5{:}]); % Ermitteln der maximalen Windstärke.
 

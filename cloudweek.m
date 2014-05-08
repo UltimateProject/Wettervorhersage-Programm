@@ -25,7 +25,7 @@ function [] = cloudweek(wolken_dichte_aktuell, wolken_dichte_Tage_rest)
  
  % Axen ausschalten und Position des Bildes bestimmen
  axis off
- axes ('Position', [0.05 0.35 0.075 0.15])
+ axes ('Position', [0.03 0.35 0.075 0.15])
 
  %if-Abfrage: Zuweisung des Bildes
  if w1_mittel<= 40
@@ -49,7 +49,7 @@ w1_min(isspace(w1_min))=[];%Löschen der Leerzeile zwischen Wert & %
 
  % Anzeige der minimalen Bewölkungsdichte
  wmin1 = uicontrol('Style', 'text', 'Units','normalized','Position',...
-                   [0.13 0.35  0.06 0.05],'FontSize',12,'String',w1_min);
+                   [0.11 0.35  0.06 0.05],'FontSize',12,'String',w1_min);
 
 %  Umformung der Werte in Strings, einfügen von '%' 
 w1_max= num2str(w1_max);
@@ -59,7 +59,7 @@ w1_max(isspace(w1_max))=[];%Löschen der Leerzeile zwischen Wert & %
 
 % Anzeige der maximalen Bewölkungsdichte
 wmax1 = uicontrol('Style', 'text', 'Units','normalized','Position',...
-                   [0.13 0.45 0.06 0.05],'FontSize',12, 'String', w1_max);
+                   [0.11 0.45 0.06 0.05],'FontSize',12, 'String', w1_max);
                
                
 % BEGINN TAG 2
@@ -68,7 +68,7 @@ wmax1 = uicontrol('Style', 'text', 'Units','normalized','Position',...
  
  % Achsen aussschalten und Position des Bildes bestimmen
  axis off
- axes ('Position', [0.25 0.35 0.075 0.15])
+ axes ('Position', [0.23 0.35 0.075 0.15])
 
  % if-Abfrage: Zuweisung des Bildes
  if w2_mittel<= 40
@@ -92,7 +92,7 @@ w2_min(isspace(w2_min))=[];%Löschen der Leerzeile zwischen Wert & %
 
  % Anzeige minimalen der Bewölkungsdichte
  wmin2 = uicontrol('Style', 'text', 'Units','normalized','Position',...
-                   [0.33 0.35  0.06 0.05],'FontSize',12,'String',w2_min);
+                   [0.31 0.35  0.06 0.05],'FontSize',12,'String',w2_min);
 
 %Umformung der Werte in Strings, einfügen von '%'
 w2_max= num2str(w2_max);
@@ -102,7 +102,7 @@ w2_max(isspace(w2_max))=[];%Löschen der Leerzeile zwischen Wert & %
 
 % Anzeige maximalen der Bewölkungsdichte
 wmax2 = uicontrol('Style', 'text', 'Units','normalized','Position',...
-                   [0.33 0.45 0.06 0.05],'FontSize',12, 'String', w2_max); 
+                   [0.31 0.45 0.06 0.05],'FontSize',12, 'String', w2_max); 
                
                
  % BEGINN TAG 3
@@ -110,7 +110,7 @@ wmax2 = uicontrol('Style', 'text', 'Units','normalized','Position',...
  w3_mittel = (w3_min + w3_max)/2;
  % Achsen ausblenden und Position des Bildes bestimmen
  axis off
- axes ('Position', [0.45 0.35 0.075 0.15])
+ axes ('Position', [0.43 0.35 0.075 0.15])
 
  % if-Abfrage: Zuweisung des Bildes
  if w3_mittel<= 40
@@ -134,7 +134,7 @@ w3_min(isspace(w3_min))=[];%Löschen der Leerzeile zwischen Wert & %
  
  % Anzeige minimalen der Bewölkungsdichte
  wmin3 = uicontrol('Style', 'text', 'Units','normalized','Position',...
-                   [0.53 0.35  0.06 0.05],'FontSize',12,'String',w3_min);
+                   [0.51 0.35  0.06 0.05],'FontSize',12,'String',w3_min);
                
 %Umformung der Werte in Strings, einfügen von '%'
 w3_max= num2str(w3_max);
@@ -144,14 +144,14 @@ w3_max(isspace(w3_max))=[];%Löschen der Leerzeile zwischen Wert & %
 
 % Anzeige maximalen der Bewölkungsdichte
 wmax3 = uicontrol('Style', 'text', 'Units','normalized','Position',...
-                   [0.53 0.45 0.06 0.05],'FontSize',12, 'String', w3_max);
+                   [0.51 0.45 0.06 0.05],'FontSize',12, 'String', w3_max);
                
 % BEGINN TAG 4
  % Mittelwert bilden 
  w4_mittel = (w4_min + w4_max)/2;
  % Achsen ausblenden und Position des Bildes bestimmen
  axis off
- axes ('Position', [0.65 0.35 0.075 0.15])
+ axes ('Position', [0.63 0.35 0.075 0.15])
 
  % if-Abfrage: Zuweisung des Bildes
  if w4_mittel<= 40
@@ -175,7 +175,7 @@ w4_min(isspace(w4_min))=[];%Löschen der Leerzeile zwischen Wert & %
 
 % Anzeige der minimalen Bewölkungsdichte
 wmin4 = uicontrol('Style', 'text', 'Units','normalized','Position',...
-                   [0.73 0.35  0.06 0.05],'FontSize',12,'String',w4_min);
+                   [0.71 0.35  0.06 0.05],'FontSize',12,'String',w4_min);
                
 %Umformung der Werte in Strings, einfügen von '%'
 w4_max= num2str(w4_max);
@@ -185,7 +185,7 @@ w4_max(isspace(w4_max))=[];%Löschen der Leerzeile zwischen Wert & %
                
 % Anzeige der maximalen Bewölkungsdichte
 wmax4 = uicontrol('Style', 'text', 'Units','normalized','Position',...
-                   [0.73 0.45 0.06 0.05],'FontSize',12, 'String', w4_max); 
+                   [0.71 0.45 0.06 0.05],'FontSize',12, 'String', w4_max); 
                
                
 % BEGINN TAG 5
@@ -193,7 +193,7 @@ wmax4 = uicontrol('Style', 'text', 'Units','normalized','Position',...
  w5_mittel = (w5_min + w5_max)/2;
  % Achsen ausblenden, Position des Bildes bestimmt
  axis off
- axes ('Position', [0.85 0.35 0.075 0.15])
+ axes ('Position', [0.83 0.35 0.075 0.15])
 
  % if-Abfrage: Zuweisung des Bildes
  if w5_mittel<= 40
@@ -217,7 +217,7 @@ w5_min(isspace(w5_min))=[];%Löschen der Leerzeile zwischen Wert & %
 
  % Anzeige der minimalen Bewölkungsdichte
  wmin5 = uicontrol('Style', 'text', 'Units','normalized','Position',...
-                   [0.93 0.35  0.06 0.05],'FontSize',12,'String',w5_min);
+                   [0.91 0.35  0.06 0.05],'FontSize',12,'String',w5_min);
                
 %Umformung der Werte in Strings, einfügen von '%'
 w5_max= num2str(w5_max);
@@ -227,5 +227,7 @@ w5_max(isspace(w5_max))=[]; %Löschen der Leerzeile zwischen Wert & %
                
 % Anzeige der maximalen Bewölkungsdichte
 wmax5 = uicontrol('Style', 'text', 'Units','normalized','Position',...
-                   [0.93 0.45 0.06 0.05],'FontSize',12, 'String', w5_max);               
+                   [0.91 0.45 0.06 0.05],'FontSize',12, 'String', w5_max);               
 end
+%--------------------Licence ---------------------------------------------
+% Copyright (c) <2014> Marc Hieronimus, Joseffa Baumann

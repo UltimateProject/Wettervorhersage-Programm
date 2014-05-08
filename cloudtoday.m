@@ -37,7 +37,7 @@ aktuell = strjoin(aktuell);
 aktuell(isspace(aktuell))=[];
 
  waktuell = uicontrol('Style', 'text', 'Units','normalized','Position',...
-                     [0.15 0.4 0.1 0.05],'FontSize',16, 'String',...
+                     [0.18 0.43 0.1 0.05],'FontSize',16, 'String',...
                      aktuell);
 
  % BEGINN BEWÖLKUNG TAGESVERLAUF
@@ -74,7 +74,7 @@ windmin(isspace(windmin))=[];
  
 % Anzeige der minimalen Bewölkungswerte
 wmin = uicontrol('Style', 'text', 'Units','normalized','Position',...
-                   [0.62 0.38  0.1 0.05],'FontSize',12,'String',...
+                   [0.65 0.38  0.1 0.05],'FontSize',12,'String',...
                    windmin);
 
 % Umformung der Werte in Strings, einfügen von '%'
@@ -85,10 +85,11 @@ windmax(isspace(windmax))=[];
 
 % Anzeigen der maximalen Bewölkungswerte
 wmax = uicontrol('Style', 'text', 'Units','normalized','Position',...
-                   [0.62 0.5 0.1 0.05],'FontSize',12, 'String', ...
+                   [0.65 0.5 0.1 0.05],'FontSize',12, 'String', ...
                    windmax);
  
  end
-
+%--------------------Licence ---------------------------------------------
+% Copyright (c) <2014> Marc Hieronimus, Joseffa Baumann
 
 

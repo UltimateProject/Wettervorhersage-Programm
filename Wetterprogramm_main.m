@@ -1,5 +1,5 @@
 close all  % Schließt alle noch geöffneten Skripte und Funktionen.
-%clear all  % Leert den Workspace.
+clear all  % Leert den Workspace.
 clc        % Leert die Commandline.
 
 % Erstellt eine Figure die als Fenster für das Hauptmenü dient. ES werden
